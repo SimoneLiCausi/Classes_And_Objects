@@ -21,16 +21,33 @@ public class Exercise {
 
     public static void main(String[] args) {
 
-        Programmer firstProgrammerObject = new Programmer();
-        Programmer secondProgrammerObject = new Programmer();
+        Programmer firstProgrammer = new Programmer();
 
-        firstProgrammerObject.drinkCoffe();
-        firstProgrammerObject.printDetails();
+        firstProgrammer.setName("Simone");
+        firstProgrammer.setAge(27);
+        firstProgrammer.setWearsGlasses(false);
+
+        Programmer secondProgrammer = new Programmer();
+
+        secondProgrammer.setName("Francesco");
+        secondProgrammer.setAge(25);
+        secondProgrammer.setWearsGlasses(true);
+
+        firstProgrammer.drinkCoffe();
+        firstProgrammer.printDetails();
 
         System.out.println("----------------------------------------");
 
-        secondProgrammerObject.printDetails();
-        secondProgrammerObject.hasGlasses();
+
+        secondProgrammer.printDetails();
+        secondProgrammer.hasGlasses();
+
+
+
+
+
+
+
     }
     }
 
